@@ -2,8 +2,7 @@
 
 ## Prerequisitos
 
-Befere you can install the snippet, you must install [Vim Snippets](http://www.vim.org/scripts/script.php?script_id=2540)
-
+Before you can install the snippet, you must install [Vim Snippets](http://www.vim.org/scripts/script.php?script_id=2540)
 Really recommended have installed Vim syntax highlighting and indentation support. [Vim CoffeeScript](http://github.com/kchmck/vim-coffee-script)
 
 ## Installation:
