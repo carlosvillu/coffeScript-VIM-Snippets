@@ -1,4 +1,4 @@
-# Collection of Snippets for VIM
+# Collection of Snippets of CoffeeScript for VIM
 
 ## Installation:
 
