@@ -1,3 +1,9 @@
+# Class
+snippet class
+	class ${1:name}
+		constructor: (${2:params...}) ->
+			${3://body...}
+
 # Funcion
 snippet fun
 	${1:function_name} = (${2:argumen}) ->
@@ -6,3 +12,73 @@ snippet fun
 # Asignation if
 snippet =if
 	${1:variable} = ${2:valor} if ${3:condition}
+
+# Asignation if and
+snippet ifand
+	if ${1} and ${2}
+
+# Asignation if then else
+snippet =ifthen
+	${1: value} = if ${2:option} then ${3:asignation} else ${4:else}
+
+# Asignation or=
+snippet or=
+	${1:options} or= ${2:defaults}
+
+# Asignation forin
+snippet forin
+	${1:countdown} = (${2:num} for ${3:num} in ${4:[10..1]})
+
+# Asignation forof
+snippet forof
+	${1:ages} = for ${2:key}, ${3:value} of ${4:yearsOld}
+		key + " is " + value
+
+# Asignation while
+snippet while
+	${1:action()} while ${2:condition}
+
+# Asignation until
+snippet until
+	${1:action()} until ${2:condition}
+
+# Asignation forindo
+snippet forindo
+	for ${1:filename} in ${2:list}
+		do (${3:filename}) ->
+
+# Asignation try
+snippet try
+	try
+		${1:expresion}
+	catch error
+		${2:error}
+
+# Asignation tryfin
+snippet try
+	try
+		${1:expresion}
+	catch error
+		${2:error}
+	finally
+		${3:cleanAll()}
+
+# Asignation ?=
+snippet ?=
+	${1:speed} ?= ${2:75}
+
+# Asignation =?
+snippet =?
+	${1:footprints} = ${2:yetis} ? ${3:bear}
+
+# Asignation switch
+snippet switch
+	switch ${1:day}
+		when ${2:Mon} then ${3:go work}
+		else ${4:go relax}
+
+# Asignation ##
+snippet ##
+	###
+		${1:comment}
+	###
