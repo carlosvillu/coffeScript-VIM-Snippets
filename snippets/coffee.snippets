@@ -82,3 +82,61 @@ snippet ##
 	###
 		${1:comment}
 	###
+
+## Jasmine Snippets
+## Thibault NORMAND <Zenithar>
+##
+snippet desc
+	# ${1:Specification}
+
+describe '${2:Model or When ...}', ->
+	${3}
+	return
+		
+snippet it
+	it '${1:Should ...}', ->
+		${2}
+
+snippet exp
+	expect(${1:predicate})
+
+snippet exp=
+	expect(${1:predicate}).toEqual ${2:value}
+
+snippet expmatch
+	expect(${1:predicate}).toMatch /${2:regex}/
+
+snippet expdef
+	expect(${1:predicate}).toBeDefined
+
+snippet expnull
+	expect(${1:predicate}).toBeNull
+
+snippet exptrue
+	expect(${1:predicate}).toBeThruthy
+
+snippet expfalse
+	expect(${1:predicate}).toBeFalsy()
+
+snippet expcon
+	expect(${1:predicate}).toContain ${2:value}
+
+snippet befe
+	# Configuration 
+	beforeEach ->
+		${1}
+
+snippet spyon
+	spyOn ${1:object}, ${2:method}
+
+snippet expcall
+	expect(${1:predicate}).wasCalled
+
+snippet expncall
+	expect(${1:predicate}).wasNotCalled
+
+snippet expcallw
+	expect(${1:predicate}).wasCalledWith ${2:arguments}
+
+snippet expncallw
+	expect(${1:predicate}).wasNotCalledWith ${2:arguments}
